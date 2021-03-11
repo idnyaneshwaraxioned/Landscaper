@@ -314,6 +314,11 @@ header{
   background-color: #E5E5E5;
   padding: 10px 20px;
   border-radius: 5px;
+  transition: .6s;
+}
+.gallery-menu li:hover{
+  background-color: #69AD31;
+  color: #ffff;
 }
 .photos{
   display: flex;
@@ -325,6 +330,84 @@ header{
   margin-bottom: 32px;
 }
 /* Gallery section ends here */
+
+/* testimonial section start */
+.testimonials{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 90px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+.testimonials figure{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+.testimonials h2{
+  position: relative;
+  text-align: center;
+  padding-bottom: 22px;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.testimonials h2::after{
+  content: '';
+  width: 90px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #69AD31;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.slides{
+  width: 400%;
+  text-align: center;
+  display: flex;
+}
+.slide{
+  width: 100%;
+  /* display: none; */
+}
+.slide.active{
+  display: block;
+}
+.slide p{
+  margin: 20px 0;
+  padding: 0 212px;
+  font-size: 1.2rem;
+}
+.slider-controls li a{
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #A8CBC8;
+  margin: 30px 6px;
+}
+.slider-controls li a.active{
+  background-color: #ffffff;
+}
+/* testimonial section ends */
+
+/* Contact section start here */
+.contact{
+  background-color: teal;
+}
+/* Contact section ends here */
 /*=================================
   main styling ends here
 =================================*/
