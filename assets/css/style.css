@@ -100,7 +100,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1566px;
-  width: 86%;
+  width: 84%;
   margin: 0 auto;
 }
 /*=================================
@@ -279,7 +279,52 @@ header{
 }
 /* Services section ends here */
 
-
+/* Gallery section start here */
+.galler{
+  background-color: #ffffff;
+  padding: 90px 0;
+  text-align: center;
+}
+.galler h2{
+  position: relative;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.galler h2::after{
+  content: '';
+  width: 90px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #69AD31;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.galler p{
+  font-size: 1.3rem;
+  padding: 25px 0;
+}
+.gallery-menu li{
+  font-size: 1.2rem;
+  margin: 55px 15px;
+  background-color: #E5E5E5;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.photos{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.photos li{
+  flex-basis: 31%;
+  margin-bottom: 32px;
+}
+/* Gallery section ends here */
 /*=================================
   main styling ends here
 =================================*/
