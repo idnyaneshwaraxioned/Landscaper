@@ -405,7 +405,66 @@ header{
 
 /* Contact section start here */
 .contact{
+  width: 100%;
+  padding: 90px 0;
+  text-align: center;
   background-color: teal;
+}
+.contact h2{
+  position: relative;
+  text-align: center;
+  padding-bottom: 22px;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.contact h2::after{
+  content: '';
+  width: 90px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #69AD31;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact .wrapper > p{
+  font-size: 1.3rem;
+  padding: 25px 0;
+}
+.contact-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 56px 0;
+}
+.contact-list li{
+  margin: 0 75px;
+}
+.contact-list li h4{
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 10px 0;
+  position: relative;
+}
+.contact-list li h4::after{
+  content: '';
+  width: 80px;
+  height: 2px;
+  background-color: #A8CBC8;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact-list p{
+  font-size: 16px;
+  margin: 15px 0;
+}
+.contact-form{
+  background-color: tan;
 }
 /* Contact section ends here */
 /*=================================
