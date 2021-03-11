@@ -134,8 +134,96 @@ header{
 /*=================================
   main styling starts here
 =================================*/
+/* banner start here */
+.banner{
+  width: 100%;
+}
+.banner .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.banner img{
+  position: absolute;
+  top: 90px;
+  left: 0;
+  z-index: -1;
+}
+.banner h2{
+  font-size: 3.8rem;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 335px;
+}
+.banner p{
+  text-align: center;
+  padding: 20px 350px;
+  font-size: 1.3rem;
+  color: #A8CBC8;
+}
+.banner .btn{
+  padding: 18px 25px;
+  border: 1px solid #ffff;
+  background: #69AD31;
+  margin: 54px 0 168px 0;
+  border-radius: 10px;
+}
+/* banner ends here */
 
-
+/* Welcome section start here */
+.welcome{
+  background-color: #ffffff;
+  padding: 120px 0;
+}
+.welcome-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-content > li{
+  flex-basis: 48%;
+  height: 386px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.welcome-content h2{
+  color: #000000;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+.welcome-content p{
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+.welcome-content .btn{
+  display: inline;
+  font-size: 1rem;
+  width: 166px;
+  padding: 16px 15px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #69AD31;
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+}
+.card li{
+  flex-basis: 47%;
+}
+.card li h3{
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+/* Welcome section ends here */
 
 
 
