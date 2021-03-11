@@ -225,9 +225,59 @@ header{
 }
 /* Welcome section ends here */
 
-
-
-
+/* Services section start here */
+.serivces{
+  background-color: #69AD31;
+  padding: 90px 0;
+  color: #ffffff;
+}
+.serivces h2{
+  position: relative;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.serivces h2::after{
+  content: '';
+  width: 90px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.serivces .wrapper > p{
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 25px 0;
+}
+.services-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 58px;
+}
+.services-card li{
+  flex-basis: 20%;
+}
+.services-card li img{
+  border-radius: 50%;
+  border: 10px solid #87aa6b;
+}
+.services-card h4{
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin: 25px 0;
+}
+.services-card p{
+  font-size: 1.2rem;
+}
+/* Services section ends here */
 
 
 /*=================================
