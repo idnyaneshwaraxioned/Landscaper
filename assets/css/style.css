@@ -483,6 +483,13 @@ form textarea {
 }
 /* Contact section ends here */
 
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/ 
 /*Footer start here*/
 footer{
   width: 100%;
@@ -511,19 +518,6 @@ footer h4 span {
   color: #727272; 
 }
 /*Footer ends here*/
-/*=================================
-  main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
 
  /*=================================
   footer styling ends here
@@ -532,7 +526,30 @@ footer h4 span {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
+  header{
+    flex-direction: column;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  .menu {
+    position: absolute;
+    flex-direction: column;
+    background-color: #363636;
+  }
+  .menu li {
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+  }
+  .menu-item a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0 27px;
+    color: #b8bfc1;
+    letter-spacing: 2px;
+  }
 
 
 }  
