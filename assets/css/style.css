@@ -103,6 +103,14 @@ li {
   width: 84%;
   margin: 0 auto;
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 /*=================================
   Header styling starts here
 =================================*/
@@ -122,7 +130,7 @@ header{
   display: inline-block;
   text-decoration: none;
   font-size: 1rem;
-  padding: 0 20px;
+  padding: 0 27px;
   color: #A8CBC8;
   letter-spacing: 2px;
 }
@@ -137,12 +145,7 @@ header{
 /* banner start here */
 .banner{
   width: 100%;
-}
-.banner .wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding-bottom: 164px;
 }
 .banner img{
   position: absolute;
@@ -151,9 +154,9 @@ header{
   z-index: -1;
 }
 .banner h2{
-  font-size: 3.8rem;
+  font-size: 4.3rem;
   letter-spacing: 3px;
-  font-weight: 900;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
   margin-top: 335px;
@@ -161,22 +164,24 @@ header{
 .banner p{
   text-align: center;
   padding: 20px 350px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
   color: #A8CBC8;
 }
-.banner .btn{
-  padding: 18px 25px;
-  border: 1px solid #ffff;
+.btn{
+  padding: 15px 25px;
   background: #69AD31;
-  margin: 54px 0 168px 0;
-  border-radius: 10px;
+  margin: 25px 0;
+  border-radius: 5px;
+  color: #fff
 }
 /* banner ends here */
 
 /* Welcome section start here */
 .welcome{
   background-color: #ffffff;
-  padding: 120px 0;
+  /*padding: 90px 0;*/
+  padding-bottom: 90px;
 }
 .welcome-content{
   display: flex;
@@ -185,33 +190,22 @@ header{
 }
 .welcome-content > li{
   flex-basis: 48%;
-  height: 386px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 .welcome-content h2{
   color: #000000;
-  font-size: 2.3rem;
-  letter-spacing: 2px;
+  font-size: 2.4rem;
+  letter-spacing: 3px;
   font-weight: bold;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 .welcome-content p{
-  margin: 15px 0;
+  margin-bottom: 15px;
   font-size: 1.2rem;
 }
-.welcome-content .btn{
-  display: inline;
-  font-size: 1rem;
-  width: 166px;
-  padding: 16px 15px;
-  border-radius: 10px;
-  color: #ffffff;
-  background-color: #69AD31;
-}
 .card{
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 .card li{
@@ -230,36 +224,33 @@ header{
   background-color: #69AD31;
   padding: 90px 0;
   color: #ffffff;
+  text-align: center;
 }
 .serivces h2{
   position: relative;
-  text-align: center;
-  padding: 22px 0;
   font-size: 2.6rem;
   font-weight: 600;
   letter-spacing: 1px;
+  margin-bottom: 37px;
 }
 .serivces h2::after{
   content: '';
   width: 90px;
   height: 3px;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #fff;
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
 }
 .serivces .wrapper > p{
-  text-align: center;
   font-size: 1.3rem;
-  padding: 25px 0;
+  margin: 25px 0 75px 0;
 }
 .services-card{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
   margin-bottom: 58px;
 }
 .services-card li{
@@ -287,8 +278,7 @@ header{
 }
 .galler h2{
   position: relative;
-  text-align: center;
-  padding: 22px 0;
+  margin: 6px 0 25px 0;
   font-size: 2.6rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -300,13 +290,13 @@ header{
   border-radius: 5px;
   background-color: #69AD31;
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
 }
 .galler p{
-  font-size: 1.3rem;
-  padding: 25px 0;
+  font-size: 1.4rem;
+  margin: 45px 0 10px 0;
 }
 .gallery-menu li{
   font-size: 1.2rem;
@@ -337,11 +327,7 @@ header{
   text-align: center;
   position: relative;
   padding: 90px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #ffffff;
+  color: #fff;
 }
 .testimonials figure{
   width: 100%;
@@ -353,7 +339,8 @@ header{
 .testimonials h2{
   position: relative;
   text-align: center;
-  padding-bottom: 22px;
+  margin-top: 26px;
+  margin-bottom: 36px;
   font-size: 2.6rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -365,7 +352,7 @@ header{
   border-radius: 5px;
   background-color: #69AD31;
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -388,8 +375,8 @@ header{
   display: block;
 }
 .slide p{
-  margin: 20px 0;
-  padding: 0 212px;
+  margin: 30px 0;
+  padding: 0 10%;
   font-size: 1.2rem;
 }
 .slider-controls li a{
@@ -406,9 +393,8 @@ header{
 /* Contact section start here */
 .contact{
   width: 100%;
-  padding: 90px 0;
+  padding: 90px 0 0 0;
   text-align: center;
-  background-color: teal;
 }
 .contact h2{
   position: relative;
@@ -442,7 +428,7 @@ header{
 .contact-list li{
   margin: 0 75px;
 }
-.contact-list li h4{
+.contact h4{
   font-size: 1.2rem;
   font-weight: 800;
   padding: 10px 0;
@@ -463,10 +449,46 @@ header{
   font-size: 16px;
   margin: 15px 0;
 }
-.contact-form{
-  background-color: tan;
+form{
+  width: 64%; 
+  margin: 0 auto;
+}
+form input[type="text"],
+form input[type="email"]{
+  width: 43%;
+  padding: 6px 20px;
+  font-size: 1.1rem;
+}
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0
+}
+form textarea { 
+  width: 96%;
+  padding: 5px 20px 85px 20px;
+  font-size: 1.3rem;
+}
+.btn {
+  padding: 14px 31px;
+  background: #69AD31;
+  margin: 29px 0 120px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #ffff;
+  outline: none;
+  border: none;
 }
 /* Contact section ends here */
+
+/*Footer start here*/
+footer{
+  width: 100%;
+  height: 180px;
+  background-color: #363636;
+}
+/*Footer ends here*/
 /*=================================
   main styling ends here
 =================================*/
